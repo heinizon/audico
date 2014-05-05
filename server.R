@@ -25,8 +25,6 @@ install_load('shiny', 'rCharts', 'dplyr',
 
 shinyServer(function(input, output, session) {
   
-  lookupData <- read.csv('data_provider_demo_lookup_050414.csv')
-  
   fakeData <- 
     structure(list(partner = structure(c(2L, 2L, 3L, 3L, 1L, 1L, 
                                          4L, 4L), .Label = c("addthis", "bluekai", "exelate", "neustar"
